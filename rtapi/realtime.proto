@@ -304,6 +304,8 @@ message Match {
 message MatchCreate {
   // Optional name to use when creating the match.
   string name = 1;
+  // Optional label.
+  string lable = 2;
 }
 
 // Realtime match data received from the server.
