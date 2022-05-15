@@ -22,11 +22,11 @@ package nakama.api;
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/wrappers.proto";
 
-option go_package = "github.com/heroiclabs/nakama-common/api";
+option go_package = "github.com/tdl1001/nakama-common/api";
 
 option java_multiple_files = true;
 option java_outer_classname = "NakamaApi";
-option java_package = "com.heroiclabs.nakama.api";
+option java_package = "com.tdl1001.nakama.api";
 
 option csharp_namespace = "Nakama.Protobuf";
 
