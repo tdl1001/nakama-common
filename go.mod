@@ -1,4 +1,4 @@
-module github.com/heroiclabs/nakama-common
+module github.com/tdl1001/nakama-common
 
 go 1.14
 
