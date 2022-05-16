@@ -298,14 +298,30 @@ message Match {
   repeated UserPresence presences = 5;
   // A reference to the current user's presence in the match.
   UserPresence self = 6;
+  // Name
+  string name = 7;
+  // Scene name
+  string scene = 8;
+  // Scene verification code
+  string scene_verif = 9;
+  // Max number of players
+  int32 max_players = 10;
+  // Password
+  string password = 11;
 }
 
 // Create a new realtime match.
 message MatchCreate {
   // Optional name to use when creating the match.
   string name = 1;
-  // Optional label.
-  string label = 2;
+  // Optional scene.
+  string scene = 2;
+  // Scene verification code
+  string scene_verif = 3;
+  // Max count of players.
+  int32 max_players = 4;
+  // Password
+  string password = 5;
 }
 
 // Realtime match data received from the server.
