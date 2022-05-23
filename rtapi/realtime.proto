@@ -133,6 +133,8 @@ message Envelope {
     PartyDataSend party_data_send = 49;
     // Presence update for a particular party.
     PartyPresenceEvent party_presence_event = 50;
+    // A Client to server request to update match status
+    MatchUpdate match_update = 100;
   }
 }
 
@@ -322,6 +324,16 @@ message MatchCreate {
   int32 max_players = 4;
   // Password
   string password = 5;
+}
+
+// Update match status
+message MatchUpdate {
+  // The match unique ID
+  string match_id = 1;
+  // Optional status
+  string status = 2;
+  // Optional status code
+  int32 stat_code = 3;
 }
 
 // Realtime match data received from the server.
