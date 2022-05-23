@@ -818,6 +818,10 @@ message Match {
   int32 max_players = 10;
   // Password
   string password = 11;
+  // Status
+  string status = 12;
+  // Code
+  int32 code = 13;
 }
 
 // A list of realtime matches.
