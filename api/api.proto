@@ -824,6 +824,12 @@ message Match {
   int32 stat_code = 13;
 }
 
+// Get Match Request
+message GetMatchRequest {
+  // The ID of Match
+  string match_id = 1;
+}
+
 // A list of realtime matches.
 message MatchList {
   // A number of matches corresponding to a list operation.
